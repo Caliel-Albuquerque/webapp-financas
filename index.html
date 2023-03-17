@@ -14,6 +14,42 @@
   <link href="assets/img/favicon1.png" rel="icon" media="all">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" media="all" disabled>
 
+
+
+
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileImage" content="assets/img/icon_144.png">
+  <meta name="msapplication-TileColor" content="#31506F">
+  <meta name="theme-color" content="#4D5360" />
+  <link rel="shortcut icon" sizes="192x192" href="assets/img/icon_192.png">
+  <link rel="shortcut icon" sizes="128x128" href="assets/img/icon_128.png">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="PWA Teste">
+  <link rel="apple-touch-icon" href="assets/img/icon_144.png">
+  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/img/icon_152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon_180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="assets/img/icon_167.png">
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link href="assets/img/ios/ipad.png" sizes="3200x4267" rel="apple-touch-startup-image" />
+  <link href="assets/img/ios/ipadpro.png" sizes="3475x4633" rel="apple-touch-startup-image" />
+  <link href="assets/img/ios/ipadpro2.png" sizes="4267x5692" rel="apple-touch-startup-image" />
+  <link href="assets/img/ios/Iphone6Plus.png" sizes="2588x4600" rel="apple-touch-startup-image" />
+  <link href="assets/img/ios/Iphone7.png" sizes="1563x2779" rel="apple-touch-startup-image" />
+  <link href="assets/img/ios/IphoneSE-05.png" sizes="1333x2367" rel="apple-touch-startup-image" />
+  <link href="assets/img/ios/IphoneX-05.png" sizes="2344x5075" rel="apple-touch-startup-image" />
+
+  <link rel="icon" type="image/png" href="assets/img/icon_144.png">
+
+
+
+
+
+
+
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" media="all">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,7 +66,7 @@
   <link href="assets/css/main.css" rel="stylesheet" media="all">
 
   <!--PWA-->
-  <link rel="manifest" href="./manifest.json">
+  <link rel="manifest" href="manifest.json">
   <!-- =======================================================
   * Template Name: Impact - v1.2.0
   * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
@@ -706,18 +742,11 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="./service-worker.js"></script>
+  <script src="service-worker.js"></script>
 
   <script>
     let newWorker;
-    function showUpdateBar() {
-      let snackbar = document.getElementById('snackbar');
-      snackbar.className = 'show';
-    }
-    // The click event on the pop up notification
-    document.getElementById('reload').addEventListener('click', function () {
-      newWorker.postMessage({ action: 'skipWaiting' });
-    });
+
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/service-worker.js').then(reg => {
         reg.addEventListener('updatefound', () => {
@@ -729,7 +758,6 @@
               case 'installed':
                 if (navigator.serviceWorker.controller) {
                   // new update available
-                  showUpdateBar();
                 }
                 // No update available
                 break;
