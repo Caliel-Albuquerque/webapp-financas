@@ -8,7 +8,7 @@ self.addEventListener('install', event => {
     caches.open(cacheName)
       .then(cache => cache.addAll([
 
-        './index.html',
+        'index.html',
 
         './assets/css/bootstrap.min.css',
 
