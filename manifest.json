@@ -1,0 +1,29 @@
+{
+  "background_color": "#ffffff",
+  "description": "m site de webfinanças pode ser usado para gerenciar contas bancárias, investimentos e carteiras digitais, permitindo que os usuários visualizem suas transações financeiras e façam transferências ou investimentos online.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "webapp-financas.vercel",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "webapp-financas.vercel",
+  "start_url": "/",
+  "theme_color": "#ffffff",
+  "categories": [
+    "finance"
+  ],
+  "screenshots": [],
+  "icons": [
+    {
+      "src": "assets/img/favicon1.png",
+      "type": "image/png",
+      "sizes": "339x398"
+    },
+    {
+      "src": "assets/img/apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "180x180"
+    }
+  ],
+  "shortcuts": []
+}
