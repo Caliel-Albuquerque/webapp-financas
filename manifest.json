@@ -17,12 +17,14 @@
     {
       "src": "assets/img/favicon1.png",
       "type": "image/png",
-      "sizes": "339x398"
+      "sizes": "339x398",
+      "purpose": "any maskable"
     },
     {
       "src": "assets/img/apple-touch-icon.png",
       "type": "image/png",
-      "sizes": "180x180"
+      "sizes": "180x180",
+      "purpose": "any maskable"
     }
   ],
   "shortcuts": []
