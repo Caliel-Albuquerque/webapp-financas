@@ -19,6 +19,12 @@
       "sizes": "71x71"
     },
     {
+      "src": "assets/img/favicons1.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
       "src": "assets/img/icons/windows11/SmallTile.scale-125.png",
       "sizes": "89x89"
     },
