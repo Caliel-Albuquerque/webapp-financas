@@ -745,7 +745,7 @@
   <script src="assets/vendor/php-email-form/validate.js"></script>
   
 
-  <script>
+  <!-- <script>
     let newWorker;
 
     if ('serviceWorker' in navigator) {
@@ -771,6 +771,17 @@
         if (refreshing) return;
         window.location.reload();
         refreshing = true;
+      });
+    }
+  </script> -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function() {
+        navigator.serviceWorker.register('/service-worker.js').then(function(registration) {
+          console.log('ServiceWorker registration successful with scope: ', registration.scope);
+        }, function(err) {
+          console.log('ServiceWorker registration failed: ', err);
+        });
       });
     }
   </script>
