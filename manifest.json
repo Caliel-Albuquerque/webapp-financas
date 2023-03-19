@@ -7,7 +7,7 @@
   "orientation": "any",
   "scope": "/",
   "short_name": "webapp-financas.vercel",
-  "start_url": "https://merry-pony-2dde3d.netlify.app/",
+  "start_url": "/",
   "theme_color": "#ffffff",
   "categories": [
     "finance"
