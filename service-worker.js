@@ -10,26 +10,20 @@ self.addEventListener('install', event => {
 
         'index.html',
 
-        './assets/css/bootstrap.min.css',
+        './assets/css/main.css',
 
-        './assets/js/bootstrap.min.js',
+        './assets/js/main.js',
 
-        './assets/js/jquery.min.js',
 
-        './assets/js/popper.min.js',
-
-        './assets/img/background.png',
-        './assets/img/favicon.png',
-        './assets/img/logo.png',
-        './assets/img/icon_128.png',
-        './assets/img/icon_144.png',
-        './assets/img/icon_152.png',
-        './assets/img/icon_167.png',
-        './assets/img/icon_180.png',
-        './assets/img/icon_192.png',
-        './assets/img/icon_256.png',
-        './assets/img/icon_512.png',
-        './assets/img/formulas.JPG',
+        './assets/img/blog/blog-1.webp',
+        './assets/img/blog/blog-2.webp',
+        './assets/img/blog/blog-3.webp',
+        './assets/img/blog/blog-4.webp',
+        './assets/img/blog/blog-5.webp',
+        './assets/img/blog/blog-6.webp',
+        './assets/img/favicon1.png',
+        './assets/cta-bg.webp'
+        
       ]))
   );
 });
