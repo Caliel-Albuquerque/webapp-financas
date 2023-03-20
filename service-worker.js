@@ -59,8 +59,6 @@
 const CACHE_NAME = 'pwaTeste+-v1.2';
 const urlsToCache = [
   '/index.html',
-  '/styles/main.css',
-  '/script/main.js',
   './assets/css/main.css',
 
   './assets/js/main.js',
