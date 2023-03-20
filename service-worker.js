@@ -59,19 +59,19 @@
 const CACHE_NAME = 'pwaTeste+-v1.2';
 const urlsToCache = [
   '/index.html',
-  './assets/css/main.css',
+  '/assets/css/main.css',
 
-  './assets/js/main.js',
+  '/assets/js/main.js',
 
 
-  './assets/img/blog/blog-1.webp',
-  './assets/img/blog/blog-2.webp',
-  './assets/img/blog/blog-3.webp',
-  './assets/img/blog/blog-4.webp',
-  './assets/img/blog/blog-5.webp',
-  './assets/img/blog/blog-6.webp',
-  './assets/img/favicon1.png',
-  './assets/cta-bg.webp'
+  '/assets/img/blog/blog-1.webp',
+  '/assets/img/blog/blog-2.webp',
+  '/assets/img/blog/blog-3.webp',
+  '/assets/img/blog/blog-4.webp',
+  '/assets/img/blog/blog-5.webp',
+  '/assets/img/blog/blog-6.webp',
+  '/assets/img/favicon1.png',
+  '/assets/cta-bg.webp'
 ];
 
 self.addEventListener('install', function (event) {
