@@ -71,7 +71,7 @@ const urlsToCache = [
   '/assets/img/blog/blog-5.webp',
   '/assets/img/blog/blog-6.webp',
   '/assets/img/favicon1.png',
-  '/assets/cta-bg.webp'
+  
 ];
 
 self.addEventListener('install', function (event) {
